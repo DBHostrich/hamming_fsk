@@ -1,0 +1,14 @@
+
+State Machine - |hamming_fsk_board|state
+Name state.SHOW_RESULTS state.WAIT_FRAME state.ISSUE 
+state.ISSUE 0 0 0 
+state.WAIT_FRAME 0 1 1 
+state.SHOW_RESULTS 1 0 1 
+
+State Machine - |hamming_fsk_board|hamming_fsk_link:link|state
+Name state.FINISH state.SETTLE state.FLUSH_LAST state.SEND_BITS state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.SEND_BITS 0 0 0 1 1 
+state.FLUSH_LAST 0 0 1 0 1 
+state.SETTLE 0 1 0 0 1 
+state.FINISH 1 0 0 0 1 

@@ -1,0 +1,38 @@
+# Communication lab V2 board, EP4CE75F23C8. Pin locations and I/O standards only.
+set_location_assignment PIN_T2 -to sys_clk
+set_location_assignment PIN_T22 -to reset
+set_location_assignment PIN_L22 -to led_2[0]
+set_location_assignment PIN_L21 -to led_2[1]
+set_location_assignment PIN_F14 -to led_2[2]
+set_location_assignment PIN_K21 -to led_2[3]
+set_location_assignment PIN_J22 -to led_2[4]
+set_location_assignment PIN_J21 -to led_2[5]
+set_location_assignment PIN_F13 -to led_2[6]
+set_location_assignment PIN_H22 -to led_2[7]
+set_location_assignment PIN_H21 -to led_1[0]
+set_location_assignment PIN_H20 -to led_1[1]
+set_location_assignment PIN_F21 -to led_1[2]
+set_location_assignment PIN_G18 -to led_1[3]
+set_location_assignment PIN_H19 -to led_1[4]
+set_location_assignment PIN_F19 -to led_1[5]
+set_location_assignment PIN_D19 -to led_1[6]
+set_location_assignment PIN_F17 -to led_1[7]
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sys_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_2[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[7]
