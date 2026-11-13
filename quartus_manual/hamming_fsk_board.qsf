@@ -39,11 +39,11 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE75F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY hamming_fsk_board
+set_global_assignment -name TOP_LEVEL_ENTITY hamming_fsk_stream_board
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:00:03  NOVEMBER 06, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
-set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY advanced_output
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
@@ -97,8 +97,16 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led_1
 set_global_assignment -name SDC_FILE ../hamming_fsk_board.sdc
-set_global_assignment -name VHDL_FILE ../hamming_fsk_design.vhd
-set_global_assignment -name VHDL_FILE ../hamming_fsk_board.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
+
+# Continuous sampled link, stages 1-3. Previous implementation is in Git baseline f28a1c8.
+set_global_assignment -name VHDL_FILE ../comm_stream_pkg.vhd
+set_global_assignment -name VHDL_FILE ../comm_packet_tx.vhd
+set_global_assignment -name VHDL_FILE ../comm_sample_rx.vhd
+set_global_assignment -name VHDL_FILE ../comm_bit_channel.vhd
+set_global_assignment -name VHDL_FILE ../comm_packet_rx.vhd
+set_global_assignment -name VHDL_FILE ../hamming_fsk_stream.vhd
+set_global_assignment -name VHDL_FILE ../hamming_fsk_stream_board.vhd
