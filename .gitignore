@@ -1,0 +1,9 @@
+# Existing artifacts remain preserved in the baseline commit.
+/tmp/
+/sim_work/
+**/advanced_output/
+*.wlf
+/transcript
+/modelsim.ini
+/work/
+/hamming_fsk_stream_board.qws

@@ -1,3 +1,10 @@
+新增：连续分帧、交织纠错、采样 FSK 自主接收版本。
+请先阅读 README_STREAM.txt；ModelSim 入口是 compile_stream.do 和 view_stream.do。
+当前 Quartus 工程的顶层改为 hamming_fsk_stream_board，输出目录为 advanced_output。
+新增版本尚未执行仿真或编译，仿真由用户完成。
+
+下面保留原始版本的使用说明，原始完整快照为 Git 提交 f28a1c8。
+
 1. hamming_fsk_design.vhd：设计源码
 2. tb_hamming_fsk_link.vhd：仿真测试平台
 ModelSim仿真已通过
